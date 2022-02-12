@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Timekeeper App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run the project simply download the repo and run npm start. 
+
+You can find a live version of this app here:
+..........
+
+## READ ME
+
+A couple of notes per the guidelines stated in the document.
+
+Milliseconds is calculated based off of Date.now() which calculates the milliseconds since 1970. I am not sure if this is specifically what was desired but regardless the Start Time and End Time will be based on this given my decesion to use Date.now()
+
+All state in the application comes from Zustand. That said, there was one instance where I used the useState hook for the entries in the custom input. I felt as though there was no need to have this in Zustand given its isolated local functionality. Not sure if this is an issue but it could be adjusted if you really wanted it to be. 
+
+Adjusting the Duration, Start Time, and End Time in the URL will change the respective calculations upon refresh. That said, the root Route (localhost:3000 vs localhost:3000/screen-a....) (i.e without having clicked a navigation link of Screen A, Screen B, Screen C or entering in a custom input) will run the calculations but not show the URL search parameters. Simply click either of the three screens or enter a custom input and the Duration, Start Time, and End Time parameters will show up in the URL. This is designed because of my understanding of the PDF requring the root Route to be Screen A.  
+
+The Default Duration is set for 1 minute (60,000 milliseconds).
+
 
 ## Available Scripts
 
@@ -12,59 +28,5 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

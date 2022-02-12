@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ScreenA from './Components/ScreenA/ScreenA';
+import ScreenB from './Components/ScreenB/ScreenB';
+import ScreenC from './Components/ScreenC/ScreenC';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/screen-a" element={<ScreenA />} />
+          <Route path="/screen-b" element={<ScreenB />} />
+          <Route path="/screen-c" element={<ScreenC />} />
+          <Route path="/" element={<ScreenA />} />
+        </Routes>
+      </Router>      
     </div>
   );
 }

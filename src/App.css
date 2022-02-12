@@ -1,38 +1,79 @@
 .App {
+  min-width: 320px;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/*Global Styles */
+:root {
+  --appColor: rgb(169, 143, 219);
+  --appColorDark: rgb(124, 84, 197);
+}
+
+/* Header Text */ 
+.screenHeader {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text1 {
+  font-size: 1.5rem;
+}
+.subText1 {
+  font-size: 1rem;
+}
+
+/*Nav Section */
+.navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navLi {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  float: left;
+}
+.navLi:hover {
+  cursor: pointer;
+  background-color: var(--appColor);
+  color: black;
+}
+
+/*Duration Section */
+.durationDiv {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.customButton {
+  background-color: var(--appColor);
   color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 0 0 10px;
+}
+.customButton:hover {
+  cursor: pointer;
+  background-color: var(--appColorDark);
+  transition: 0.4s ease;
+}
+.customButton:disabled {
+  cursor: default;
+  opacity: 0.4;
 }
 
-.App-link {
-  color: #61dafb;
+
+.inputLabel {
+  margin-bottom: 20px;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Start / End Time */
+.timeDiv {
+  text-align: center;
 }
