@@ -3,7 +3,7 @@
 To run the project simply download the repo and run npm start. 
 
 You can find a live version of this app here:
-..........
+https://lucid-wilson-70dfb6.netlify.app/
 
 ## READ ME
 
@@ -17,6 +17,8 @@ Adjusting the Duration, Start Time, and End Time in the URL will change the resp
 
 The Default Duration is set for 1 minute (60,000 milliseconds).
 
+The CSS / Styling is kept to a minimum given that it is not the primary goal of this application.  
+
 
 ## Available Scripts
 
@@ -27,6 +29,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 
 
