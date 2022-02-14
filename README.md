@@ -1,6 +1,6 @@
 # Timekeeper App
 
-To run the project simply download the repo and run npm start. 
+To run the project simply download the repo and navigate to the respective directory and enter npm start. 
 
 You can find a live version of this app here:
 https://lucid-wilson-70dfb6.netlify.app/
